@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutorizationViewController">
+            <connections>
+                <outlet property="authorizeButton" destination="C6I-ry-g5E" id="h9o-ZC-VDQ"/>
+                <outlet property="bottomConstraint" destination="8CN-HT-cZd" id="4GC-k2-bEf"/>
+                <outlet property="button1" destination="uE7-OY-MeP" id="1ag-hW-fJW"/>
+                <outlet property="button2" destination="p8O-aU-RDC" id="jzv-f2-0fm"/>
+                <outlet property="button3" destination="V6e-2L-IN5" id="xpi-6R-0eP"/>
+                <outlet property="loginTextfield" destination="Tnm-7H-Hg6" id="BAd-6T-0ps"/>
+                <outlet property="passwordTextfield" destination="JDB-ec-ve7" id="kD8-Vb-C6n"/>
+                <outlet property="resultLabel" destination="z3L-Cn-0M4" id="h9u-Zl-Vqc"/>
+                <outlet property="secureView" destination="S2f-d5-z8p" id="asN-j9-QXe"/>
+                <outlet property="titleLabel" destination="mbp-Tc-vIH" id="ycu-vC-9w5"/>
+                <outlet property="topConstraint" destination="Mo1-Xl-sMT" id="eIJ-aZ-vJv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSchool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbp-Tc-vIH">
+                    <rect key="frame" x="101" y="80" width="212" height="43"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tnm-7H-Hg6">
+                    <rect key="frame" x="36" y="309" width="342" height="34"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="loginEditingDidBegin:" destination="-1" eventType="editingDidBegin" id="6zJ-j7-4nM"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JDB-ec-ve7">
+                    <rect key="frame" x="36" y="373" width="342" height="34"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6I-ry-g5E">
+                    <rect key="frame" x="148" y="467" width="156" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="Ovq-lf-cd1"/>
+                        <constraint firstAttribute="width" constant="156" id="oAe-gS-Pza"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <state key="normal" title="Authorize" image="Person">
+                        <color key="titleColor" name="Little Boy Blue"/>
+                    </state>
+                    <connections>
+                        <action selector="authorizeButtonTapped:" destination="-1" eventType="touchUpInside" id="EgN-wa-GPD"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2f-d5-z8p">
+                    <rect key="frame" x="89" y="576" width="236" height="110"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6e-2L-IN5">
+                            <rect key="frame" x="163" y="45" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="H5d-KQ-Y4V"/>
+                                <constraint firstAttribute="height" constant="50" id="dR5-0Z-QV4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" name="Little Boy Blue"/>
+                            </state>
+                            <connections>
+                                <action selector="digitButtonTapped:" destination="-1" eventType="touchUpInside" id="XYR-Cs-gfQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8O-aU-RDC">
+                            <rect key="frame" x="93" y="45" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="PFD-zL-61x"/>
+                                <constraint firstAttribute="height" constant="50" id="aPS-lo-a4p"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" name="Little Boy Blue"/>
+                            </state>
+                            <connections>
+                                <action selector="digitButtonTapped:" destination="-1" eventType="touchUpInside" id="Vl5-Xv-IXD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE7-OY-MeP">
+                            <rect key="frame" x="23" y="45" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="DzY-dI-mvu"/>
+                                <constraint firstAttribute="width" constant="50" id="y3X-dl-ser"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" name="Little Boy Blue"/>
+                            </state>
+                            <connections>
+                                <action selector="digitButtonTapped:" destination="-1" eventType="touchUpInside" id="Sx0-qC-fe0"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3L-Cn-0M4">
+                            <rect key="frame" x="112.66666666666666" y="15" width="10.666666666666671" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="textColor" name="Black"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="V6e-2L-IN5" secondAttribute="bottom" constant="15" id="7RL-O9-kYT"/>
+                        <constraint firstItem="p8O-aU-RDC" firstAttribute="top" secondItem="S2f-d5-z8p" secondAttribute="top" constant="45" id="84l-cI-hdD"/>
+                        <constraint firstItem="uE7-OY-MeP" firstAttribute="leading" secondItem="S2f-d5-z8p" secondAttribute="leading" constant="23" id="94k-N2-p7p"/>
+                        <constraint firstItem="V6e-2L-IN5" firstAttribute="top" secondItem="S2f-d5-z8p" secondAttribute="top" constant="45" id="HmP-cE-CYn"/>
+                        <constraint firstAttribute="trailing" secondItem="V6e-2L-IN5" secondAttribute="trailing" constant="23" id="Mwm-NS-kKp"/>
+                        <constraint firstAttribute="width" constant="236" id="STX-Ek-QxU"/>
+                        <constraint firstItem="z3L-Cn-0M4" firstAttribute="top" secondItem="S2f-d5-z8p" secondAttribute="top" constant="15" id="Taf-QX-Gdv"/>
+                        <constraint firstAttribute="height" constant="110" id="Wdp-3z-mYZ"/>
+                        <constraint firstItem="p8O-aU-RDC" firstAttribute="leading" secondItem="uE7-OY-MeP" secondAttribute="trailing" constant="20" id="c8n-IX-tng"/>
+                        <constraint firstItem="uE7-OY-MeP" firstAttribute="top" secondItem="S2f-d5-z8p" secondAttribute="top" constant="45" id="cck-t1-dYp"/>
+                        <constraint firstItem="V6e-2L-IN5" firstAttribute="leading" secondItem="p8O-aU-RDC" secondAttribute="trailing" constant="20" id="daI-3k-zSH"/>
+                        <constraint firstAttribute="bottom" secondItem="uE7-OY-MeP" secondAttribute="bottom" constant="15" id="fc8-vi-cyD"/>
+                        <constraint firstAttribute="bottom" secondItem="p8O-aU-RDC" secondAttribute="bottom" constant="15" id="omD-8j-n75"/>
+                        <constraint firstItem="z3L-Cn-0M4" firstAttribute="centerX" secondItem="S2f-d5-z8p" secondAttribute="centerX" id="wEA-qw-n7r"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mbp-Tc-vIH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="101" id="6cC-lV-3lP"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="S2f-d5-z8p" secondAttribute="bottom" constant="50" id="8CN-HT-cZd"/>
+                <constraint firstItem="S2f-d5-z8p" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8W7-ZY-wOM"/>
+                <constraint firstItem="S2f-d5-z8p" firstAttribute="top" secondItem="C6I-ry-g5E" secondAttribute="bottom" constant="67" id="Mdc-wl-xxn"/>
+                <constraint firstItem="mbp-Tc-vIH" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="Mo1-Xl-sMT"/>
+                <constraint firstItem="JDB-ec-ve7" firstAttribute="top" secondItem="Tnm-7H-Hg6" secondAttribute="bottom" constant="30" id="WLP-RQ-a8h"/>
+                <constraint firstItem="Tnm-7H-Hg6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="jUe-I2-kFH"/>
+                <constraint firstAttribute="trailing" secondItem="Tnm-7H-Hg6" secondAttribute="trailing" constant="36" id="kfv-1d-UmF"/>
+                <constraint firstItem="C6I-ry-g5E" firstAttribute="top" secondItem="JDB-ec-ve7" secondAttribute="bottom" constant="60" id="mQr-NG-mr9"/>
+                <constraint firstItem="JDB-ec-ve7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="nGN-vK-Csa"/>
+                <constraint firstAttribute="trailing" secondItem="mbp-Tc-vIH" secondAttribute="trailing" constant="101" id="oLC-lj-YeZ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="C6I-ry-g5E" secondAttribute="trailing" constant="110" id="wMq-PB-BrQ"/>
+                <constraint firstAttribute="trailing" secondItem="JDB-ec-ve7" secondAttribute="trailing" constant="36" id="woU-qF-BHd"/>
+            </constraints>
+            <point key="canvasLocation" x="-223" y="12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Person" width="22.333333969116211" height="22.333333969116211"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Little Boy Blue">
+            <color red="0.502" green="0.64300000000000002" blue="0.92900000000000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
