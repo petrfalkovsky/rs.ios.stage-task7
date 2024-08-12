@@ -72,11 +72,12 @@
     BOOL isCorrect = ([self.loginTextfield.text isEqualToString:correctLogin] && [self.passwordTextfield.text isEqualToString:correctPassword]);
     
     [self hideWhenTappedAround];
-    if ([self.loginTextfield.text isEqualToString:correctLogin]) {
+//    if ([self.loginTextfield.text isEqualToString:correctLogin]) {
         [self setState:@"correct" forTextfield:self.loginTextfield];
-    } else {
-        [self setState:@"error" forTextfield:self.loginTextfield];
-    }
+//    } 
+//    else {
+//        [self setState:@"error" forTextfield:self.loginTextfield];
+//    }
     
     if ([self.passwordTextfield.text isEqualToString:correctPassword]) {
         [self setState:@"correct" forTextfield:self.passwordTextfield];
