@@ -58,17 +58,41 @@
 		4FE799192691CCC800DAB705 /* Task7_RSSApp */ = {
 			isa = PBXGroup;
 			children = (
+				9DCD34542C6B950900115257 /* View */,
+				9DCD34532C6B94E900115257 /* Resources */,
+				9DCD34522C6B925300115257 /* SupportingFiles */,
+			);
+			path = Task7_RSSApp;
+			sourceTree = "<group>";
+		};
+		9DCD34522C6B925300115257 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				4FE7991A2691CCC800DAB705 /* AppDelegate.h */,
 				4FE7991B2691CCC800DAB705 /* AppDelegate.m */,
-				4FE799262691CCCA00DAB705 /* Assets.xcassets */,
-				4FE799282691CCCA00DAB705 /* LaunchScreen.storyboard */,
-				4FE7992B2691CCCA00DAB705 /* Info.plist */,
 				4FE7992C2691CCCA00DAB705 /* main.m */,
+				4FE7992B2691CCCA00DAB705 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		9DCD34532C6B94E900115257 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FE799262691CCCA00DAB705 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DCD34542C6B950900115257 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FE799282691CCCA00DAB705 /* LaunchScreen.storyboard */,
 				4FE799332691CDAB00DAB705 /* AutorizationViewController.h */,
 				4FE799342691CDAB00DAB705 /* AutorizationViewController.m */,
 				4FE799352691CDAB00DAB705 /* AutorizationViewController.xib */,
 			);
-			path = Task7_RSSApp;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YPGV8497R9;
-				INFOPLIST_FILE = Task7_RSSApp/Info.plist;
+				INFOPLIST_FILE = Task7_RSSApp/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,7 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YPGV8497R9;
-				INFOPLIST_FILE = Task7_RSSApp/Info.plist;
+				INFOPLIST_FILE = Task7_RSSApp/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
