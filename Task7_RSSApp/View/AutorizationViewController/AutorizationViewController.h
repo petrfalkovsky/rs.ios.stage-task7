@@ -7,12 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface AutorizationViewController : UIViewController
-
-@property (strong, nonatomic) NSMutableArray<NSNumber *> *pincodeArray;
 
 @end
 
-NS_ASSUME_NONNULL_END

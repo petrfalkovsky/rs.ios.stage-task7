@@ -13,6 +13,8 @@
 		4FE7992D2691CCCA00DAB705 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7992C2691CCCA00DAB705 /* main.m */; };
 		4FE799362691CDAB00DAB705 /* AutorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE799342691CDAB00DAB705 /* AutorizationViewController.m */; };
 		4FE799372691CDAB00DAB705 /* AutorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE799352691CDAB00DAB705 /* AutorizationViewController.xib */; };
+		9DCD345F2C6BC1A700115257 /* KeyboardHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD345E2C6BC1A700115257 /* KeyboardHandling.m */; };
+		9DCD34632C6BC20400115257 /* UIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD34622C6BC20400115257 /* UIConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		4FE799332691CDAB00DAB705 /* AutorizationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutorizationViewController.h; sourceTree = "<group>"; };
 		4FE799342691CDAB00DAB705 /* AutorizationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutorizationViewController.m; sourceTree = "<group>"; };
 		4FE799352691CDAB00DAB705 /* AutorizationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutorizationViewController.xib; sourceTree = "<group>"; };
+		9DCD345E2C6BC1A700115257 /* KeyboardHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardHandling.m; sourceTree = "<group>"; };
+		9DCD34602C6BC1C500115257 /* KeyboardHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardHandling.h; sourceTree = "<group>"; };
+		9DCD34622C6BC20400115257 /* UIConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIConfiguration.m; sourceTree = "<group>"; };
+		9DCD34642C6BC20D00115257 /* UIConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIConfiguration.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +93,40 @@
 		9DCD34542C6B950900115257 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9DCD34652C6BC46A00115257 /* AutorizationViewController */,
+				9DCD34612C6BC1F300115257 /* UIConfiguration */,
+				9DCD345D2C6BC17500115257 /* KeybordHandler */,
 				4FE799282691CCCA00DAB705 /* LaunchScreen.storyboard */,
-				4FE799332691CDAB00DAB705 /* AutorizationViewController.h */,
-				4FE799342691CDAB00DAB705 /* AutorizationViewController.m */,
 				4FE799352691CDAB00DAB705 /* AutorizationViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9DCD345D2C6BC17500115257 /* KeybordHandler */ = {
+			isa = PBXGroup;
+			children = (
+				9DCD34602C6BC1C500115257 /* KeyboardHandling.h */,
+				9DCD345E2C6BC1A700115257 /* KeyboardHandling.m */,
+			);
+			path = KeybordHandler;
+			sourceTree = "<group>";
+		};
+		9DCD34612C6BC1F300115257 /* UIConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				9DCD34642C6BC20D00115257 /* UIConfiguration.h */,
+				9DCD34622C6BC20400115257 /* UIConfiguration.m */,
+			);
+			path = UIConfiguration;
+			sourceTree = "<group>";
+		};
+		9DCD34652C6BC46A00115257 /* AutorizationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4FE799332691CDAB00DAB705 /* AutorizationViewController.h */,
+				4FE799342691CDAB00DAB705 /* AutorizationViewController.m */,
+			);
+			path = AutorizationViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE7991C2691CCC800DAB705 /* AppDelegate.m in Sources */,
+				9DCD34632C6BC20400115257 /* UIConfiguration.m in Sources */,
 				4FE799362691CDAB00DAB705 /* AutorizationViewController.m in Sources */,
 				4FE7992D2691CCCA00DAB705 /* main.m in Sources */,
+				9DCD345F2C6BC1A700115257 /* KeyboardHandling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
