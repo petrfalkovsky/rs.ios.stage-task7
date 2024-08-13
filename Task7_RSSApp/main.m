@@ -8,11 +8,18 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
+/**
+ * Основная функция, которая запускает приложение.
+ * @param argc Количество аргументов командной строки.
+ * @param argv Массив строк, представляющий аргументы командной строки.
+ * @return Возвращает код завершения приложения.
+ */
 int main(int argc, char * argv[]) {
-    NSString * appDelegateClassName;
+    NSString *appDelegateClassName;
     @autoreleasepool {
-        // Setup code that might create autoreleased objects goes here.
+        // Настройка кода, который может создать объекты, автоматически освобождаемые позже.
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
+    // Запуск основного цикла приложения, создание и настройка UIApplication и делегата приложения.
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }
